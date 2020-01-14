@@ -1,0 +1,9 @@
+node {
+    stage("SCM checkout-DEv1"){
+        git 'https://github.com/AmitAWS/Java-Proj01'
+    }
+    stage("Excute Java Script"){
+        sh 'javac *.java'
+        sh 'java Simple'
+    }
+}
