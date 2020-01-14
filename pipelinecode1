@@ -5,6 +5,5 @@ node {
     stage("Excute Java Script"){
         sh 'javac *.java'
         sh 'java Simple'
-        sh 'echo hello world'
     }
 }
